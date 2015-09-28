@@ -1,0 +1,9 @@
+---
+- hosts: wifi
+  remote_user: pi
+  tasks:
+  - copy: src=../conf/wpa_supplicant.conf dest=/etc/wpa_supplicant/wpa_supplicant.conf
+    become: yes
+    become_method: sudo
+
+

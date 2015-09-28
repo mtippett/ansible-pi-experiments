@@ -1,0 +1,8 @@
+---
+- hosts: sensehats
+  remote_user: pi
+  tasks:
+  - apt: name=sense-hat state=latest
+    become: yes
+    become_method: sudo
+

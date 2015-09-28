@@ -1,0 +1,5 @@
+---
+- include: plays/packages.yml
+- include: plays/ssh_setup.yml
+- include: plays/wifi_setup.yml
+

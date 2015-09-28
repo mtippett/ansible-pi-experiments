@@ -1,0 +1,5 @@
+- hosts: raspbians
+  remote_user: pi
+  tasks:
+  - authorized_key: user=pi key="{{ lookup('file', '/Users/mtippett/github/ansible-config/keys/ansible_rsa.pub') }}"
+
